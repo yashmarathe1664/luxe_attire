@@ -1,178 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Luxe Attire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-            crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo1.png" alt="Logo" style="height: 40px" />
+            <span class="ms-2 fw-bold ">LUXE ATTIRE</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <link href="css/contact.css" rel="stylesheet" type="text/css">
-    </head>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="shirt.html">Shirts</a></li>
+                  <li><a class="dropdown-item" href="tshirt.html">T-Shirts</a></li>
+                  <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>
+                </ul>
+              </li>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo1.png" alt="Logo"
-                            style="height: 40px;"> LUXE ATTIRE
-                    </a>
-                    <button class="navbar-toggler" type="button"
-                        data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About
-                                    Us</a>
-                                     <li class="nav-item">
-                                <a class="nav-link" href="cart.html">Cart</a>
-                                    
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Categeory
-                                </a>
-                                <div class="dropdown-menu"
-                                    aria-labelledby="servicesDropdown">
-                                    <a class="dropdown-item"
-                                        href="shirt.html">Shirts</a>
-                                    <a class="dropdown-item"
-                                        href="tshirt.html">T-Shirts</a>
-                                    <a class="dropdown-item"
-                                        href="hoodies.html">Hoodies</a>
-                                </div>
-                            </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <a href="#" class="btn btn-gold ms-lg-3">Shop Now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                            <li class="nav-item">
-                                <a class="nav-link active"
-                                    href="contact.html">Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                        <a href="#" class="btn btn-primary ml-lg-3">Shop Now</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <main>
+      <section class="mt-4 mb-5">
+        <div class="container">
+          <div
+            class="text-center bg-primary text-white rounded-3 py-4 mb-5 shadow-sm"
+          >
+            <h1 class="fw-bold">We're Here to Help</h1>
+            <p class="fs-5 mb-0">
+              Whether you have questions about our products, your order, or need
+              styling advice, our dedicated customer support team is ready to
+              assist you promptly.
+            </p>
+          </div>
 
-        <main>
-            <section class="mt-2 mb-2">
-                <div class="container">
-                    <div class="text-center mb-4 bgcolor1 pt-4 ps-4 pe-4 pb-1">
-                        <p class="text-white bg-dark fs-4">
-                            Need help picking the perfect fit?<br>
-                        </p>
-                    </div>
-                </div>
-                <div class="container bg-dark">
-                    <div class="col-12 col-lg text-white lead text-justify">
-                        <div class="row">
-                            <div class="col align-start-center flex-wrap">
-                                <strong>
-                                    <h1 class="text-center">Get in Touch</h1>
-                                </strong>
-                                <strong>
-                                    <p class="text-center text-white">
-                                        "Leave your query and we’ll reach out to you. For product-related queries, our support team will solve your queries."
-                                    </p>
-                                    <br>
-                                    <br>
-                                </strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center ms-3">
-                    <div
-                        class="border border-2 col-md-6 col-lg-4 mt-4 p-4 rounded shadow">
-                        <form>
-                            <div class="mb-2">
-                                <input type="text" name="name"
-                                    placeholder="Enter your Name"
-                                    class="form-control pb-3 mb-2" required>
-                                <input type="email" name="email"
-                                    placeholder="Enter Email"
-                                    class="form-control pb-3 mb-2" required>
-                                <input type="number" name="number"
-                                    placeholder="Enter Number"
-                                    class="form-control pb-3 mb-2">
-                                <input type="text" name="message"
-                                    placeholder="Enter your Message"
-                                    class="form-control pb-3 mb-2" required>
-                                <div class="justify-content-center pd-3 mb-2">
-                                    <button type="submit"
-                                        class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+          <div class="row gx-5">
+            <!-- Contact Form First -->
+            <div class="col-lg-7 mb-5">
+              <div class="card shadow-sm border-0 rounded-4 p-5">
+                <h2 class="mb-4 fw-bold">Get in Touch</h2>
+                <p class="mb-4 text-muted">
+                  Fill out the form below to send us a message. We’ll respond as
+                  quickly as possible.
+                </p>
+                <form id="contactForm" onsubmit="return validate()">
+                  <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your full name"
+                    />
+                    <span class="text-danger" id="nameError"></span>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email address"
+                    />
+                    <span class="text-danger" id="emailError"></span>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="mobile" class="form-label fw-semibold"
+                      >Mobile Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="mobile"
+                      placeholder="Enter your mobile number"
+                      pattern="[0-9]{10,15}"
+                      title="Please enter 10 to 15 digits"
+                    />
+                    <span class="text-danger" id="mobileError"></span>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="password" class="form-label fw-semibold"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Create a password"
+                      />
+                      <span class="text-danger" id="passwordError"></span>
                     </div>
 
-                    <div class="col-md-6" style="width: 100%;"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.0883971860558!2d73.78315807496537!3d18.615093382496838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9063bdafdcb%3A0x6c11afc49cf1bc1b!2sVimalsons!5e0!3m2!1sen!2sin!4v1756749455265!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;"
-                            allowfullscreen loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-md-6 mb-3">
+                      <label for="confirmPassword" class="form-label fw-semibold"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                      />
+                      <span class="text-danger" id="confirmPasswordError"></span>
                     </div>
-                </div>
+                  </div>
 
-            </section>
-        </main>
-        <footer class="footer ">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>More Info</h5>
-                        <p>Know more about our products.</p>
+                  <div class="mb-3">
+                    <label for="message" class="form-label fw-semibold"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      placeholder="Write your message here"
+                    ></textarea>
+                    <span class="text-danger" id="messageError"></span>
+                  </div>
+
+                  <fieldset class="mb-3">
+                    <legend class="col-form-label fw-semibold pt-0">Gender</legend>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="Male"
+                      />
+                      <label class="form-check-label" for="male">Male</label>
                     </div>
-                    <div class="col-md-4">
-                        <h5>Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                        </ul>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="Female"
+                      />
+                      <label class="form-check-label" for="female">Female</label>
                     </div>
-                    <div class="col-lg-4 col-md-12 mb-4">
-        <h5>Follow Us</h5>
-        <a href="https://facebook.com" target="_blank" class="me-2">
-          <img src="images/icons8-facebook-48.png" alt="Facebook" style="width:40px; height:40px;">
-        </a>
-        <a href="https://twitter.com" target="_blank" class="me-2">
-          <img src="images/icons8-twitter-48.png" alt="Twitter" style="width:40px; height:40px;">
-        </a>
-        <a href="https://instagram.com" target="_blank" class="me-2">
-          <img src="images/icons8-instagram-48.png" alt="Instagram" style="width:40px; height:40px;">
-        </a>
-        <a href="https://linkedin.com" target="_blank" class="me-2">
-          <img src="images/icons8-linkedin-48.png" alt="LinkedIn" style="width:40px; height:40px;">
-        </a>
-      </div>
-                </div>
-                <hr class="my-4">
-                <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gender"
+                        id="other"
+                        value="Other"
+                      />
+                      <label class="form-check-label" for="other">Other</label>
+                    </div>
+                    <span class="text-danger" id="genderError"></span>
+                  </fieldset>
+
+                  <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="agree" />
+                    <label class="form-check-label" for="agree"
+                      >I agree to the
+                      <a href="terms.html">terms &amp; conditions</a></label
+                    >
+                    <br />
+                    <small class="text-muted">
+                      We respect your privacy and will never share your information.
+                    </small>
+                    <span class="text-danger" id="agreeError"></span>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 fw-semibold fs-5">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
-    </body>
 
+            <!-- Contact Information Second -->
+            <div class="col-lg-5 mb-5">
+              <div class="card shadow-sm border-0 rounded-4 p-4">
+                <h3 class="mb-4 fw-semibold">Contact Information</h3>
+                <p>
+                  <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                  <strong>Address:</strong> Luxe Attire Pimri, Pune City, 411017
+                </p>
+                <p>
+                  <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                  <strong>Email:</strong>
+                  <a href="mailto:support@luxeattire.com">support@luxeattire.com</a>
+                </p>
+                <p>
+                  <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                  <strong>Phone:</strong> +91 8793989650
+                </p>
+                <p>
+                  <i class="bi bi-clock-fill me-2 text-primary"></i>
+                  <strong>Hours:</strong> Mon - Fri: 9:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-light py-4 mt-auto shadow-sm">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="fw-bold">More Info</h5>
+            <p class="text-muted">
+              Explore our latest collections, exclusive offers, and receive expert
+              styling tips tailored just for you. Your satisfaction is our priority.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="fw-bold text-uppercase mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-decoration-none text-secondary fw-medium hover-link"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-decoration-none text-secondary fw-medium hover-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="contact.html" class="text-decoration-none text-secondary fw-medium hover-link"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="cart.html" class="text-decoration-none text-secondary fw-medium hover-link"
+                  >Cart</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <h5 class="fw-bold mb-3">Follow Us On</h5>
+            <a href="https://facebook.com" target="_blank" class="text-primary mx-2 fs-4" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank" class="text-info mx-2 fs-4" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank" class="text-danger mx-2 fs-4" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank" class="text-primary mx-2 fs-4" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-muted mb-0">&copy; 2025 Luxe Attire. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

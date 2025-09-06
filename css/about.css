@@ -1,16 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=DM+Serif+Text:ital@0;1&family=New+Rocker&display=swap');
 
-.card{
-    transition: all 0.3s ease;
-
-}
-.card:hover{
-    transform: scale(1.10);
-}
-.text{
-    font-size: 21px;
-}
 .bold-font {
   font-family: "New Rocker", system-ui;
   font-weight: 400;
@@ -18,3 +8,17 @@
 
 }
 
+.navbar{
+    background-color: #ffffff; 
+  border-bottom: 3px solid #d4af37; 
+}
+.nav-link{
+    color: #343a40; 
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover,
+ .nav-link:focus,
+ .nav-link.active {
+  color: #d4af37; 
+}

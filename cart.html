@@ -1,1 +1,164 @@
-cart
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart - Luxe Attire</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo1.png" alt="Logo" style="height: 40px;"> LUXE ATTIRE
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="shirt.html">Shirts</a>
+              <a class="dropdown-item" href="tshirt.html">T-Shirts</a>
+              <a class="dropdown-item" href="hoodies.html">Hoodies</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-gold ms-lg-3">Shop Now</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <section class="container my-5">
+    <h1 class="mb-4">Your Cart</h1>
+    <p class="text-muted">Review your selected items before checkout.</p>
+
+    <div class="table-responsive">
+  <table class="table table-dark table-bordered align-middle">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="d-flex align-items-center">
+          <img src="images/h1.webp" alt="Oxford Shirt – White" style="height: 60px; width: auto; margin-right: 15px;" />
+          Hoodie – Blue
+        </td>
+        <td>₹1,999</td>
+        <td>2</td>
+        <td>₹3,998</td>
+      </tr>
+      <tr>
+        <td class="d-flex align-items-center">
+          <img src="images/h2.webp" alt="Bomber Jacket – Navy" style="height: 60px; width: auto; margin-right: 15px;" />
+          Jacket – Dark
+        </td>
+        <td>₹3,499</td>
+        <td>1</td>
+        <td>₹3,499</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    <div class="d-flex justify-content-between align-items-center mt-4">
+      <h4>Subtotal: ₹5,498</h4>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light py-4 mt-auto">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>More Info</h5>
+          <p>Know more about our products.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="text-uppercase fw-bold mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3 text-secondary">
+              <a href="index.html" class="text-decoration-none fw-semibold hover-link">Home</a>
+            </li>
+            <li class="mb-3">
+              <a href="about.html" class="text-decoration-none fw-semibold hover-link">About Us</a>
+            </li>
+            <li class="mb-3">
+              <a href="contact.html" class="text-decoration-none fw-semibold hover-link">Contact Us</a>
+            </li>
+            <li class="mb-3">
+              <a href="cart.html" class="text-decoration-none fw-semibold hover-link">Cart</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h5 class="mb-2">Follow Us On</h5>
+          <a href="https://facebook.com" target="_blank" class="mx-2 decoration">
+            <i class="fab fa-facebook-f fa-2x"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="mx-2 decoration">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="mx-2 decoration">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="mx-2 decoration">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="my-4" />
+      <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>
