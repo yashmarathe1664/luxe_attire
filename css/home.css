@@ -50,8 +50,8 @@
 
 .btn-gold:hover,
 .btn-gold:focus {
-   background-color: #23272b; /* Darker charcoal */
-  color: #ffd700;            /* Bright gold */
+   background-color: #23272b; 
+  color: #ffd700;            
 }
 @media (min-width: 1024px) {
   
