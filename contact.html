@@ -22,73 +22,58 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/logo1.png" alt="Logo" style="height: 40px" />
-            <span class="ms-2 fw-bold ">LUXE ATTIRE</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <header class="sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo1.png" alt="Logo" style="height: 40px;"> LUXE ATTIRE
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link fw-semibold" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold" href="cart.html">Cart</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle fw-semibold"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Category
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="shirt.html">Shirts</a></li>
-                  <li><a class="dropdown-item" href="tshirt.html">T-Shirts</a></li>
-                  <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>
-                </ul>
-              </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about-active" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item category-style category-border" href="shirt.html">Shirts</a>
+              <a class="dropdown-item category-style category-border" href="tshirt.html">T-Shirts</a>
+              <a class="dropdown-item category-style" href="hoodies.html">Hoodies</a>
+            </div>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link active fw-bold" href="contact.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <a href="#" class="btn btn-gold ms-lg-3">Shop Now</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-gold ms-lg-3">Shop Now</a>
+
+      </div>
+    </div>
+  </nav>
+  </header>
 
     <main>
       <section class="mt-4 mb-5">
         <div class="container">
           <div
-            class="text-center bg-primary text-white rounded-3 py-4 mb-5 shadow-sm"
+            class="text-center bg-dark text-white rounded-3 py-4 mb-5 shadow-sm"
           >
-            <h1 class="fw-bold">We're Here to Help</h1>
-            <p class="fs-5 mb-0">
+            <h1 class="fw-bold text-gold">We're Here to Help</h1>
+            <p class="fs-5 mb-0 text-gold">
               Whether you have questions about our products, your order, or need
               styling advice, our dedicated customer support team is ready to
               assist you promptly.
@@ -119,7 +104,9 @@
                   </div>
 
                   <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <label for="email" class="form-label fw-semibold"
+                      >Email</label
+                    >
                     <input
                       type="email"
                       class="form-control"
@@ -159,7 +146,9 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                      <label for="confirmPassword" class="form-label fw-semibold"
+                      <label
+                        for="confirmPassword"
+                        class="form-label fw-semibold"
                         >Confirm Password</label
                       >
                       <input
@@ -168,7 +157,10 @@
                         id="confirmPassword"
                         placeholder="Confirm your password"
                       />
-                      <span class="text-danger" id="confirmPasswordError"></span>
+                      <span
+                        class="text-danger"
+                        id="confirmPasswordError"
+                      ></span>
                     </div>
                   </div>
 
@@ -186,7 +178,9 @@
                   </div>
 
                   <fieldset class="mb-3">
-                    <legend class="col-form-label fw-semibold pt-0">Gender</legend>
+                    <legend class="col-form-label fw-semibold pt-0">
+                      Gender
+                    </legend>
                     <div class="form-check form-check-inline">
                       <input
                         class="form-check-input"
@@ -205,7 +199,9 @@
                         id="female"
                         value="Female"
                       />
-                      <label class="form-check-label" for="female">Female</label>
+                      <label class="form-check-label" for="female"
+                        >Female</label
+                      >
                     </div>
                     <div class="form-check form-check-inline">
                       <input
@@ -221,46 +217,71 @@
                   </fieldset>
 
                   <div class="mb-4 form-check">
-                    <input type="checkbox" class="form-check-input" id="agree" />
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="agree"
+                    />
                     <label class="form-check-label" for="agree"
                       >I agree to the
                       <a href="terms.html">terms &amp; conditions</a></label
                     >
                     <br />
                     <small class="text-muted">
-                      We respect your privacy and will never share your information.
+                      We respect your privacy and will never share your
+                      information.
                     </small>
                     <span class="text-danger" id="agreeError"></span>
                   </div>
 
-                  <button type="submit" class="btn btn-primary w-100 fw-semibold fs-5">
+                  <button
+                    type="submit"
+                    class="btn btn-gold w-100 fw-semibold fs-5"
+                  >
                     Submit
                   </button>
                 </form>
               </div>
             </div>
 
-            <!-- Contact Information Second -->
-            <div class="col-lg-5 mb-5">
+            <div class="col-lg-5 mt-4 mb-5">
               <div class="card shadow-sm border-0 rounded-4 p-4">
                 <h3 class="mb-4 fw-semibold">Contact Information</h3>
                 <p>
-                  <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                  <i class="bi bi-geo-alt-fill me-2 text-success"></i>
                   <strong>Address:</strong> Luxe Attire Pimri, Pune City, 411017
                 </p>
                 <p>
-                  <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                  <i class="bi bi-envelope-fill me-2 text-success"></i>
                   <strong>Email:</strong>
-                  <a href="mailto:support@luxeattire.com">support@luxeattire.com</a>
+                  <a href="mailto:support@luxeattire.com"
+                    >support@luxeattire.com</a
+                  >
                 </p>
                 <p>
-                  <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                  <i class="bi bi-telephone-fill me-2 text-success"></i>
                   <strong>Phone:</strong> +91 8793989650
                 </p>
                 <p>
-                  <i class="bi bi-clock-fill me-2 text-primary"></i>
+                  <i class="bi bi-clock-fill me-2 text-success"></i>
                   <strong>Hours:</strong> Mon - Fri: 9:00 AM – 6:00 PM
                 </p>
+              </div>
+
+              <div
+                class="card shadow-sm border-0 rounded-4 mt-5"
+                style="height: 300px; overflow: hidden"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.8243579203686!2d73.80199007595833!3d18.626968265914073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9424b44386f%3A0x7bcf6e817a60a636!2sFortune%20Cloud%20Technologies%20Pimpri!5e0!3m2!1sen!2sin!4v1757252122358!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Luxe Attire Location Map"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -268,61 +289,64 @@
       </section>
     </main>
 
-    <footer class="footer bg-light py-4 mt-auto shadow-sm">
-      <div class="container text-center">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h5 class="fw-bold">More Info</h5>
-            <p class="text-muted">
-              Explore our latest collections, exclusive offers, and receive expert
-              styling tips tailored just for you. Your satisfaction is our priority.
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5>LUXE ATTIRE</h5>
+            <p>
+              Redefining luxury fashion with timeless elegance and modern style
+              since 2015.
             </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://x.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://in.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
           </div>
-
-          <div class="col-md-4">
-            <h5 class="fw-bold text-uppercase mb-3">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <a href="index.html" class="text-decoration-none text-secondary fw-medium hover-link"
-                  >Home</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="about.html" class="text-decoration-none text-secondary fw-medium hover-link"
-                  >About Us</a
-                >
-              </li>
-              <li class="mb-2">
-                <a href="contact.html" class="text-decoration-none text-secondary fw-medium hover-link"
-                  >Contact Us</a
-                >
-              </li>
-              <li>
-                <a href="cart.html" class="text-decoration-none text-secondary fw-medium hover-link"
-                  >Cart</a
-                >
-              </li>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h5>Shop</h5>
+            <ul class="footer-links">
+              <li><a href="shirt.html">Shirts</a></li>
+              <li><a href="tshirt.html">T-Shirts</a></li>
+              <li><a href="hoodies.html">Hoodies</a></li>
+              <li><a href="#">New Arrivals</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-4 col-md-12">
-            <h5 class="fw-bold mb-3">Follow Us On</h5>
-            <a href="https://facebook.com" target="_blank" class="text-primary mx-2 fs-4" aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="https://twitter.com" target="_blank" class="text-info mx-2 fs-4" aria-label="Twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="https://instagram.com" target="_blank" class="text-danger mx-2 fs-4" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://linkedin.com" target="_blank" class="text-primary mx-2 fs-4" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
+          <div class="col-md-2 mb-4 mb-md-0">
+            <h5>Company</h5>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i>Shivraj Nagar
+                Rahatani,Pune India
+              </li>
+              <li><i class="fas fa-phone me-2"></i> +91 8793989650</li>
+              <li><i class="fas fa-envelope me-2"></i> info@luxeattire.com</li>
+            </ul>
           </div>
         </div>
-        <hr class="my-4" />
-        <p class="text-muted mb-0">&copy; 2025 Luxe Attire. All Rights Reserved.</p>
+        <hr class="my-4 bg-light" />
+        <div class="text-center">
+          <p>&copy; 2025 LUXE ATTIRE. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
 

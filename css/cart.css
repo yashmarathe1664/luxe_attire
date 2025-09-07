@@ -1,3 +1,10 @@
+
+:root {
+      --luxe-gold: #d4af37;
+      --luxe-dark: #1a1a1a;
+      --luxe-light: #f8f9fa;
+      --luxe-gray: #6c757d;
+    }
 .fab {
   margin-left: 10px 10px;
   
@@ -35,9 +42,9 @@
   transition: color 0.3s ease;
 }
 .nav-link:hover,
- .nav-link:focus,
- .nav-link.active {
-  color: #d4af37; 
+.nav-link:focus,
+.cart-active {
+  color: #d4af37;
 }
 .btn-gold {
   background-color: #343a40;
@@ -49,6 +56,43 @@
 
 .btn-gold:hover,
 .btn-gold:focus {
-   background-color: #23272b; /* Darker charcoal */
-  color: #ffd700;            /* Bright gold */
+   background-color: #23272b;
+  color: #ffd700;            
 }
+.footer {
+      background-color: var(--luxe-dark);
+      color: white;
+      padding: 3rem 0 1.5rem;
+    }
+    
+    .footer h5 {
+      color: var(--luxe-gold);
+      margin-bottom: 1.2rem;
+      font-size: 1.2rem;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.7rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--luxe-gold);
+    }
+    
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      transition: color 0.3s;
+    }
