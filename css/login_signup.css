@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=DM+Serif+Text:ital@0;1&family=New+Rocker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: white;
+}
+header{
+    font-size: 28px;
+    font-weight: 500;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+form .field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+}
+.field button{
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button{
+    background-color: #0171d3;
+    border-radius: 8px;
+}
+.field input,
+.field button{
+    height:100%;
+    width: 100%;
+    border:none;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #CACACA;
+}
+.field input{
+    border-bottom-width: 2px;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836 ;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.eye-icon{
+    position: absolute;
+    top: 10%;
+    right: 1px;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 4px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    position: relative;
+    margin: 36px 0;
+    background-color:blanchedalmond
+}
+.line::before{
+    content: ' Or';
+    position: absolute;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #232826;
+    padding: 0 15px;
+}
+.media-options a{
+    display: flex;
+    background-color: #4267b2;
+}
+a.google{
+    color: #fff;
+    background-color: #4267b2;
+}
