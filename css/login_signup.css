@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
     background-color: beige;
-    column-gap: 30px;
 }
 .form{
     max-width: 430px;
@@ -21,6 +20,18 @@
     padding: 20px;
     border-radius: 6px;
     background-color: white;
+}
+.form.signup{
+    opacity: 0;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.forms.show-signup .form.login{
+    opacity: 0;
+    pointer-events: none;
 }
 header{
     font-size: 28px;
@@ -164,6 +175,7 @@ a.google span{
     text-decoration: underline;
 }
 
+<<<<<<< Updated upstream
 
 .hidden {
   display: none;
@@ -612,3 +624,10 @@ body {
   color: white;
 }
 
+=======
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 15px 10px;
+}
+}
+>>>>>>> Stashed changes
