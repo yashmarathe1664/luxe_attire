@@ -42,6 +42,9 @@
           <li class="nav-item">
                         <a class="nav-link" href="cart.html">Cart</a>
                     </li>
+                     <li class="nav-item">
+            <a class="nav-link" href="chekout.html">Checkout</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Category
@@ -55,6 +58,9 @@
 
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Checkout</a>
           </li>
         </ul>
         <a href="#" class="btn btn-gold ms-lg-3">Shop Now</a>
@@ -142,12 +148,55 @@
     </table>
   </div>
 
-  <!-- Subtotal -->
-    <!-- Subtotal -->
-  <div class="text-end">
-    <h4 id="subtotal">Subtotal: ₹3800</h4>
-  </div>
+  <!-- Subtotal + Buy Option -->
+<!-- Subtotal + Buy Option -->
+<div class="text-end mt-4">
+  <h4 id="subtotal">Subtotal: ₹3800</h4>
+  <button class="btn btn-warning btn-lg mt-3" onclick="proceedToBuy()">
+    Proceed to Buy
+  </button>
 </div>
+
+<script>
+function updateCart(select) {
+  let row = select.closest("tr");
+  let price = parseInt(row.cells[1].innerText.replace("₹", ""));
+  let qty = parseInt(select.value);
+  let total = price * qty;
+  row.querySelector(".total").innerText = "₹" + total;
+  updateSubtotal();
+}
+
+function deleteRow(button) {
+  let row = button.closest("tr");
+  row.remove();
+  updateSubtotal();
+}
+
+function updateSubtotal() {
+  let rows = document.querySelectorAll("table tbody tr");
+  let subtotal = 0;
+  rows.forEach(row => {
+    let totalCell = row.querySelector(".total");
+    if (totalCell) {
+      subtotal += parseInt(totalCell.innerText.replace("₹", ""));
+    }
+  });
+  document.getElementById("subtotal").innerText = "Subtotal: ₹" + subtotal;
+}
+
+function proceedToBuy() {
+  let subtotalText = document.getElementById("subtotal").innerText;
+  let amount = subtotalText.replace("Subtotal: ₹", "");
+  if (amount === "0") {
+    alert("Your cart is empty. Please add products before proceeding.");
+  } else {
+    alert("Proceeding to buy. Total amount: ₹" + amount);
+    window.location.href = "checkout.html"; // redirect to checkout page
+  }
+}
+</script>
+
 
 
 <!-- JavaScript -->
@@ -185,6 +234,19 @@ function updateSubtotal() {
   document.getElementById("subtotal").innerText = "Subtotal: ₹" + subtotal;
 }
 </script>
+<script>
+function proceedToBuy() {
+  let subtotalText = document.getElementById("subtotal").innerText;
+  let amount = subtotalText.replace("Subtotal: ₹", "");
+  if (amount === "0") {
+    alert("Your cart is empty.");
+  } else {
+    window.location.href = "checkout.html"; // ✅ Must match file name exactly
+  }
+}
+
+</script>
+
 
 </body>
 </html>
@@ -202,6 +264,7 @@ function updateSubtotal() {
     
     </div>
   </section>
+
 
   <!--Whatsapp Icon Start-->
 <input class="chat-menu hidden" id="offchat-menu" type="checkbox" />
