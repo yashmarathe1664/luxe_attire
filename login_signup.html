@@ -14,100 +14,96 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
     <body>
-        <section class="container forms">
-            <div class="form login">
-                <div class="form-content form">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" class="input"
-                                id="email" placeholder="Email">
-                        </div>
-                        <div class="field input-field">
-                            <input type="email" class="password"
-                                id="Password" placeholder="Password">
-                            <i class="bi bi-eye-slash eye-icon"></i>
-                        </div>
-                        <div class="form-link">
-                            <a href="#" class="forgot-pass">Forgot Password?</a>
-                        </div>
-                        <div class>
-                            <button type="submit"
-                                class="field button">Login</button>
-                        </div>
-                        <div class="form-link">
-                            <span>Already have an account? <a href="#"
-                                    class="signup-link">Signup</a></span>
-                        </div>
-                    </form>
-                </div>
 
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook"><i
-                            class="bi bi-facebook facebook-icon"></i>
-                        <span>Login with Facebook</span></a>
-                </div>
-                <div class="media-options">
-                    <a href="#" class="field google"><img
-                            src="images/icons/Google_log.jpg" alt="google-logo"
-                            class="google-logo">
-                        <span>Login with Google</span></a>
-                </div>
-                <div class="return-div">
-                <button class="return-home"><a href="index.html">return to Home</a></button>
-                </div>
-            </div>
-
-            <!-- signup form -->
-            <div class="form signup">
-                <div class="form-content form">
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" class="input"
-                                id="email" placeholder="Email">
-                        </div>
-                        <div class="field input-field">
-                            <input type="email" class="password"
-                                id="Password" placeholder="Password">
-                        </div>
-                         <div class="field input-field">
-                            <input type="email" class="password"
-                                id="Password" placeholder="Confirm Password">
-                            <i class="bi bi-eye-slash eye-icon"></i>
-                        </div>
-                        <div class>
-                            <button type="submit"
-                                class="field button">Signup</button>
-                        </div>
-                        <div class="form-link">
-                            <span>Already have an account? <a href="#"
-                                    class="signup-link">Login</a></span>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="media-options">
-                    <a href="#" class="field facebook"><i
-                            class="bi bi-facebook facebook-icon"></i>
-                        <span>Login with Facebook</span></a>
-                </div>
-                <div class="media-options">
-                    <a href="#" class="field google"><img
-                            src="images/icons/Google_log.jpg" alt="google-logo"
-                            class="google-logo">
-                        <span>Login with Google</span></a>
-                </div>
-                <div class="return-div">
-                <button class="return-home"><a href="index.html">return to Home</a></button>
-                </div>
-            </div>
-        </section>
-
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form
+          action="#"
+          class="form"
+          id="form1"
+        >
+          <h2 class="form__title">Sign Up</h2>
+          <input
+            type="text"
+            placeholder="User"
+            class="input"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="input"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input"
+          />
+          <button class="btn">Sign Up</button>
+        </form>
+      </div>
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form
+          action="#"
+          class="form"
+          id="form2"
+        >
+          <h2 class="form__title">Sign In</h2>
+          <input
+            type="text"
+            id="emailInput"
+            placeholder="Username "
+            class="input"
+          />
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Password "
+            class="input"
+          />
+          <a
+            href="#"
+            class="link"
+            >Forgot your password?</a
+          >
+          <button class="btn">Sign In</button>
+        </form>
+      </div>
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button
+              class="btn"
+              id="signIn"
+            >
+              Sign In
+            </button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button
+              class="btn"
+              id="signUp"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="MDJAminDiv">
+      <a
+        class="MDJAmin"
+        href="https://github.com/MDJAmin"
+        target="_blank"
+        ></a
+      >
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+  
+  <!--Whatsapp Icon Start-->
         <input class="chat-menu hidden" id="offchat-menu" type="checkbox" />
 <div class="sticky-button" id="sticky-button">
   <label for="offchat-menu">
@@ -149,6 +145,8 @@
     </svg>
   </a>
 </div>
+
+  <!--Whatsapp Icon End-->
         
         <!--javascript-->
         <script
