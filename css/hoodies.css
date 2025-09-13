@@ -345,3 +345,6 @@
   opacity: 1;
   visibility: visible;
 }
+.card:hover{
+  transform: scale(1.1);
+}

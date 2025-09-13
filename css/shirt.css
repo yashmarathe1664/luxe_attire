@@ -345,3 +345,9 @@
   opacity: 1;
   visibility: visible;
 }
+.shirt-image{
+  position: relative;
+}
+.card:hover{
+  transform: scale(1.1);
+}
